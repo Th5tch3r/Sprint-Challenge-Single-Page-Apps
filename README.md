@@ -30,7 +30,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What does AJAX stand for?
 > Answer: AJAX stands for Asynchronous JavaScript and XML.
 - [ ] What are `controlled components` in React?
-> Answer: They are form elements such as <input>, <textarea>, and <select> that typically maintain their own state and update it based on user input.
+> Answer: They are form elements such as `<input>, <textarea>, and <select>` that typically maintain their own state and update it based on user input.
 - [ ] Name three tools/libraries for making AJAX requests.
 > Answer: 1. Axios, 2. Fetch, 3. Request
 
