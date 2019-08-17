@@ -2,7 +2,7 @@ import React from "react";
 import {Card, Image} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
-export default function CharacterCard() {
+export default function CharacterCard(data) {
   return (<Card>
     <Image src={data.image} alt={data.name} />
     <Card.Content>
