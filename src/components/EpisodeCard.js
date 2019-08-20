@@ -2,20 +2,20 @@ import React from 'react';
 import { Card} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
-export default function CharacterCard({ data }) {
+export default function CharacterCard({ name, air_date, episode, characters}) {
     return (<Card>
         <Card.Content>
             <Card.Header>
-                {data.name}
+                {name}
             </Card.Header>
             <Card.Meta>
-                {data.air_date}
+                {air_date}
             </Card.Meta>
             <Card.Meta>
-                {data.episode}
+                {episode}
             </Card.Meta>
             <Card.Description>
-                Residents: {data.characters.length}
+                Residents: {characters.length}
             </Card.Description>
         </Card.Content>
     </Card>)

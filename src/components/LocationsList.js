@@ -19,6 +19,11 @@ export default function LocationsList() {
     }, [])
     return <section className='location-list grid-view'>
 
-         <h2>{location.map(e => <LocationCard data={e} />)}</h2>
+         <h2>{location.map(props => {
+         return<LocationCard 
+         name={props.name}
+         type={props.type}
+         dimension={props.dimension}
+         residents={props.residents} />})}</h2>
     </section>
 }

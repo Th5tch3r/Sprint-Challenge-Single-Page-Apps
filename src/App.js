@@ -8,8 +8,9 @@ export default function App() {
   return (
     <main>
       <Header />
-      <AppRouter />
       <TabNav />
+      <AppRouter />
+
     </main>
   );
 }

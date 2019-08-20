@@ -12,7 +12,7 @@ export default function EpisodeList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
     Axios.get(`https://rickandmortyapi.com/api/episode/`)
       .then(response => {
-        setEpisode(response.data)
+        setEpisode(response.data.results)
       })
       .catch(error => {
         console.log(error)
@@ -21,7 +21,13 @@ export default function EpisodeList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>{episode.map(e => <EpisodeCard data={e} />)}</h2>
+      <h2>{episode.map(props => {
+      return <EpisodeCard 
+        name={props.name}
+        air_date={props.air_date}
+        episode={props.episode}
+        characters={props.characters}
+      />})}</h2>
     </section>
   );
 }
